@@ -92,8 +92,6 @@ public class ModManager
     void Initialize()
     {
 #if MODMANAGER_LOADS_FROM_MEMORY
-        Moddable[] Moddables = UnityEngine.Object.FindObjectsOfType<Moddable>();
-
         Mod MemoryMod = new Mod();
 
         Array.ForEach(AppDomain.CurrentDomain.GetAssemblies(), (Assembly) =>
